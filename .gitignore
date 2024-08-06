@@ -162,8 +162,6 @@ cython_debug/
 icon_d2
 DWD_Stations_old
 DWD_Stations
-downloaded_images
-combined_images
 /*.7z
 /*.zip
 *.pdn
@@ -178,3 +176,5 @@ icon-d2_p.grib2
 icon-d2_p_01.grib2
 wgrib2
 Deutschland_Karte_ohne_BG.png.aux.xml
+*.jpg
+*.png
