@@ -43,7 +43,7 @@ def calculate_column_means(arr):
 dates = []
 imgs = list(Path(f"../combined_images/germany\\").glob(f"**/*.jpg"))
 if len(imgs) == 0:
-    raise ValueError("Es exierieren keine Bilder in: '.\\combined_images\\germany\\'")
+    raise ValueError("Es exierieren keine Bilder in: '..\\combined_images\\germany\\'")
 
 # Jedes Bild steht für ein Datum und Uhrzeit, d.h. Anzahl dates = Anzahl Bilder
 for path in imgs:
@@ -54,7 +54,7 @@ for path in imgs:
 
 # Referenz laden und Koordinaten holen
 dwd_data = dwd.DWDStations()
-dwd_data.load_folder(".\\DWD_Stations")
+dwd_data.load_folder("..\\DWD_Stations")
 # lese nur die geladenen Einträge aus
 valid_entries = dwd_data.df[dwd_data.df[COL_DWD_LOADED].astype(bool)]
 coords = list(zip(valid_entries[COL_LAT], valid_entries[COL_LON]))

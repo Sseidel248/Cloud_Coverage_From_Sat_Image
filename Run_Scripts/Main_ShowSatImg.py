@@ -26,7 +26,7 @@ def latlon_to_pixel(img, lon, lat):
 
 # Darstellen aller DWD-Stationen auf einem Satellitenbild
 # dwd_data = dwd.DWDStations()
-# dwd_data.load_folder(".\\DWD_Stations")
+# dwd_data.load_folder("..\\DWD_Stations")
 # show_poses = list(zip(dwd_data.df[COL_LAT], dwd_data.df[COL_LON]))
 show_poses = [(52.519683856228305, 13.40824400801289),
               (54.82094893832346, 9.45336095833125),
@@ -36,7 +36,7 @@ show_poses = [(52.519683856228305, 13.40824400801289),
 
 # Beispiel Bild laden
 img_name = "20240724_1200_UTC.jpg"
-tmp_img = Image.open(f".\\combined_images\\germany\\{img_name}")
+tmp_img = Image.open(f"..\\combined_images\\germany\\{img_name}")
 image_np = np.array(tmp_img)
 
 # Koordinaten in Pixel umwandeln

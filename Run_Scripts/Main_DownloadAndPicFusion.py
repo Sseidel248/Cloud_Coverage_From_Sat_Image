@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 from pathlib import Path
 from tqdm import tqdm
-from datetime import datetime, timezone
+from datetime import datetime, timezone, time
 
 
 def get_subdirectories(directory):
@@ -35,9 +35,9 @@ def get_rounded_unix_timestamp(dt: datetime | str):
 
 
 # ---- Download der Teilbilder + Teil 1/2 ---- #
-date_range = pd.date_range(datetime(2024, 7, 22, 7),
-                           datetime(2024, 7, 22, 19),
-                           freq="H")
+start_time = datetime.combine(datetime.now().date(), time(7, 0))
+end_time = datetime.combine(datetime.now().date(), time(19, 0))
+date_range = pd.date_range(start_time, end_time, freq="H")
 dates_str = [date.strftime("%Y%m%d%H") for date in date_range]
 
 # Webseite, die analysiert werden soll
