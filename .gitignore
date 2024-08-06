@@ -14,7 +14,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -160,3 +159,22 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+icon_d2
+DWD_Stations_old
+DWD_Stations
+downloaded_images
+combined_images
+/*.7z
+/*.zip
+*.pdn
+/*.png
+DWDStationReader.py
+DataAnalysis.py
+GeneralFunctions.py
+Grib2Reader.py
+HtmlGrabbler.py
+IOConsts.py
+icon-d2_p.grib2
+icon-d2_p_01.grib2
+wgrib2
+Deutschland_Karte_ohne_BG.png.aux.xml
